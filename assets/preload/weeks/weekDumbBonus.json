@@ -1,0 +1,41 @@
+{
+	"storyName": "Dumb Bonus Songs",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Phooey",
+			"sly",
+			[
+				105,
+				49,
+				145
+			]
+		],
+		[
+			"Thwack",
+			"matt",
+			[
+				38,
+				101,
+				209
+			]
+		]
+	],
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Dumb Bonus Week"
+}

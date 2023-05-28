@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mat blg.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="yahooo Cópia0000" x="100" y="100" width="298" height="360"/>
+	<SubTexture name="yahooo Cópia0001" x="498" y="100" width="298" height="360"/>
+	<SubTexture name="yahooo Cópia0002" x="100" y="560" width="298" height="360"/>
+</TextureAtlas>

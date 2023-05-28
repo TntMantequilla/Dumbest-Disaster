@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="static dumb sly.png">
+<SubTexture name="static dumb sly idle0000" x="1234" y="0" width="241" height="326" frameX="0" frameY="0" frameWidth="241" frameHeight="326" />
+<SubTexture name="static dumb sly idle0001" x="0" y="338" width="242" height="336" frameX="0" frameY="0" frameWidth="242" frameHeight="336" />
+<SubTexture name="static dumb sly idle0002" x="0" y="0" width="248" height="338" frameX="0" frameY="0" frameWidth="248" frameHeight="338" />
+<SubTexture name="static dumb sly idle0003" x="0" y="674" width="247" height="334" frameX="0" frameY="0" frameWidth="247" frameHeight="334" />
+<SubTexture name="static dumb sly down0000" x="986" y="0" width="248" height="335" frameX="0" frameY="0" frameWidth="248" frameHeight="335" />
+<SubTexture name="static dumb sly down0001" x="242" y="338" width="242" height="336" frameX="0" frameY="0" frameWidth="242" frameHeight="336" />
+<SubTexture name="static dumb sly down0002" x="741" y="674" width="242" height="330" frameX="0" frameY="0" frameWidth="242" frameHeight="330" />
+<SubTexture name="static dumb sly up0000" x="983" y="674" width="242" height="330" frameX="0" frameY="0" frameWidth="242" frameHeight="330" />
+<SubTexture name="static dumb sly up0001" x="986" y="335" width="248" height="335" frameX="0" frameY="0" frameWidth="248" frameHeight="335" />
+<SubTexture name="static dumb sly up0002" x="484" y="338" width="242" height="336" frameX="0" frameY="0" frameWidth="242" frameHeight="336" />
+<SubTexture name="static dumb sly left0000" x="248" y="0" width="248" height="338" frameX="0" frameY="0" frameWidth="248" frameHeight="338" />
+<SubTexture name="static dumb sly left0001" x="744" y="0" width="242" height="336" frameX="0" frameY="0" frameWidth="242" frameHeight="336" />
+<SubTexture name="static dumb sly left0002" x="247" y="674" width="247" height="334" frameX="0" frameY="0" frameWidth="247" frameHeight="334" />
+<SubTexture name="static dumb sly right0000" x="744" y="336" width="242" height="336" frameX="0" frameY="0" frameWidth="242" frameHeight="336" />
+<SubTexture name="static dumb sly right0001" x="496" y="0" width="248" height="338" frameX="0" frameY="0" frameWidth="248" frameHeight="338" />
+<SubTexture name="static dumb sly right0002" x="494" y="674" width="247" height="334" frameX="0" frameY="0" frameWidth="247" frameHeight="334" />
+</TextureAtlas>

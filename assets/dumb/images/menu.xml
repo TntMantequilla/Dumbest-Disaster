@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="dumb buttons.png">
+<SubTexture name="story_mode0000" x="0" y="0" width="356" height="102" frameX="-27" frameY="-6" frameWidth="381" frameHeight="72" />
+<SubTexture name="story_mode0001" x="356" y="0" width="352" height="102" frameX="-27" frameY="-7" frameWidth="381" frameHeight="72" />
+<SubTexture name="story_modeselect0000" x="0" y="102" width="421" height="112" frameX="0" frameY="0" frameWidth="381" frameHeight="72" />
+<SubTexture name="story_modeselect0001" x="421" y="102" width="409" height="112" frameX="-2" frameY="0" frameWidth="381" frameHeight="72" />
+<SubTexture name="freeplay0000" x="0" y="214" width="302" height="100" frameX="-44" frameY="-6" frameWidth="333" frameHeight="78" />
+<SubTexture name="freeplay0001" x="302" y="214" width="294" height="100" frameX="-44" frameY="-6" frameWidth="333" frameHeight="78" />
+<SubTexture name="freeplayselect0000" x="0" y="314" width="373" height="114" frameX="0" frameY="0" frameWidth="333" frameHeight="78" />
+<SubTexture name="freeplayselect0001" x="373" y="314" width="364" height="118" frameX="0" frameY="0" frameWidth="333" frameHeight="78" />
+<SubTexture name="options0000" x="0" y="432" width="264" height="100" frameX="-30" frameY="-10" frameWidth="284" frameHeight="76" />
+<SubTexture name="options0001" x="264" y="432" width="266" height="102" frameX="-28" frameY="-8" frameWidth="284" frameHeight="76" />
+<SubTexture name="optionsselect0000" x="0" y="534" width="324" height="116" frameX="0" frameY="0" frameWidth="284" frameHeight="76" />
+<SubTexture name="optionsselect0001" x="324" y="534" width="316" height="114" frameX="-2" frameY="-2" frameWidth="284" frameHeight="76" />
+<SubTexture name="credits0000" x="0" y="650" width="258" height="96" frameX="-44" frameY="-12" frameWidth="298" frameHeight="80" />
+<SubTexture name="credits0001" x="258" y="650" width="265" height="100" frameX="-40" frameY="-12" frameWidth="298" frameHeight="80" />
+<SubTexture name="creditsselect0000" x="0" y="750" width="338" height="120" frameX="0" frameY="0" frameWidth="298" frameHeight="80" />
+<SubTexture name="creditsselect0001" x="338" y="750" width="332" height="118" frameX="0" frameY="-2" frameWidth="298" frameHeight="80" />
+</TextureAtlas>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mat yahoo.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="yahooo0000" x="100" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0001" x="100" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0002" x="750" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0003" x="1400" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0004" x="2050" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0005" x="2700" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0006" x="3350" y="100" width="550" height="408"/>
+	<SubTexture name="yahooo0007" x="100" y="608" width="550" height="408"/>
+	<SubTexture name="yahooo0008" x="750" y="608" width="550" height="408"/>
+	<SubTexture name="yahooo0009" x="1400" y="608" width="550" height="408"/>
+	<SubTexture name="yahooo0010" x="2050" y="608" width="550" height="408"/>
+	<SubTexture name="yahooo0011" x="2700" y="608" width="550" height="408"/>
+	<SubTexture name="yahooo0012" x="3350" y="608" width="550" height="408"/>
+	<SubTexture name="yahooo0013" x="100" y="1116" width="550" height="408"/>
+	<SubTexture name="yahooo0014" x="750" y="1116" width="550" height="408"/>
+	<SubTexture name="yahooo0015" x="1400" y="1116" width="550" height="408"/>
+	<SubTexture name="yahooo0016" x="2050" y="1116" width="550" height="408"/>
+	<SubTexture name="yahooo0017" x="2700" y="1116" width="550" height="408"/>
+	<SubTexture name="yahooo0018" x="3350" y="1116" width="550" height="408"/>
+	<SubTexture name="yahooo0019" x="100" y="1624" width="550" height="408"/>
+	<SubTexture name="yahooo0020" x="750" y="1624" width="550" height="408"/>
+</TextureAtlas>

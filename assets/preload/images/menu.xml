@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menu buttons.png">
+<SubTexture name="story_mode0000" x="0" y="401" width="407" height="96" frameX="-10" frameY="-1" frameWidth="390" frameHeight="59" />
+<SubTexture name="story_modeselect0000" x="0" y="497" width="430" height="99" frameX="0" frameY="0" frameWidth="390" frameHeight="59" />
+<SubTexture name="story_modeselect0001" x="0" y="0" width="416" height="98" frameX="-6" frameY="-1" frameWidth="390" frameHeight="59" />
+<SubTexture name="freeplay0000" x="0" y="596" width="337" height="115" frameX="0" frameY="0" frameWidth="297" frameHeight="75" />
+<SubTexture name="options0000" x="0" y="711" width="288" height="98" frameX="-10" frameY="-2" frameWidth="267" frameHeight="63" />
+<SubTexture name="optionsselect0000" x="0" y="809" width="307" height="103" frameX="0" frameY="0" frameWidth="267" frameHeight="63" />
+<SubTexture name="optionsselect0001" x="0" y="912" width="301" height="102" frameX="-2" frameY="-1" frameWidth="267" frameHeight="63" />
+<SubTexture name="credits0000" x="0" y="98" width="277" height="98" frameX="-12" frameY="-3" frameWidth="260" frameHeight="64" />
+<SubTexture name="creditsselect0000" x="0" y="196" width="300" height="104" frameX="0" frameY="0" frameWidth="260" frameHeight="64" />
+<SubTexture name="creditsselect0001" x="0" y="300" width="291" height="101" frameX="-5" frameY="-2" frameWidth="260" frameHeight="64" />
+</TextureAtlas>

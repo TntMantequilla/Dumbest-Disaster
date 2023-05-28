@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Sly Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				11
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Sly Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-3
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sly Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				-2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sly Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-7
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sly Left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sly",
+	"position": [
+		-100,
+		-60
+	],
+	"healthicon": "sly",
+	"flip_x": false,
+	"healthbar_colors": [
+		95,
+		65,
+		122
+	],
+	"camera_position": [
+		0,
+		70
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
