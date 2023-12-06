@@ -217,8 +217,8 @@ class TitleState extends MusicBeatState
 	{
 		var dasavefolder:String = 'assets';
 
-		if(FlxG.save.data.ModCompleted == null) FlxG.save.data.ModCompleted = false; //dummy crash lololololol
-		if(FlxG.save.data.ModCompleted) dasavefolder = 'dumb';
+		if(FlxG.save.data.SettedFolder == null) FlxG.save.data.SettedFolder = false; //dummy crash lololololol
+		if(FlxG.save.data.SettedFolder) dasavefolder = 'dumb';
 
 		if (!initialized)
 			if(FlxG.sound.music == null)
@@ -233,7 +233,7 @@ class TitleState extends MusicBeatState
 
 		var scrollbg:FlxSprite = new FlxBackdrop('', X);
 		scrollbg.loadGraphic(dasavefolder+'/images/art/checkerboard.png');
-		scrollbg.antialiasing = FlxG.save.data.ModCompleted;
+		scrollbg.antialiasing = FlxG.save.data.SettedFolder;
 		scrollbg.velocity.x = -50;
 		add(scrollbg);
 

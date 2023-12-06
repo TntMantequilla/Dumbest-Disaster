@@ -47,7 +47,7 @@ class MainMenuState extends MusicBeatState
 		'credits',
 		'options'
 	];
-
+	var menuLogo:FlxSprite;
 	var normalspr:FlxSprite;
 	var staticspr:FlxSprite;
 	var magenta:FlxSprite;
@@ -60,7 +60,9 @@ class MainMenuState extends MusicBeatState
 		var dasavefolder:String = 'assets';
 
 		if(FlxG.save.data.ModCompleted == null) FlxG.save.data.ModCompleted = false; //dummy crash lololololol
-		if(FlxG.save.data.ModCompleted) dasavefolder = 'dumb';
+		if(FlxG.save.data.SettedFolder) dasavefolder = 'dumb';
+
+		FlxG.mouse.visible = FlxG.save.data.ModCompleted;
 
 		#if MODS_ALLOWED
 		Paths.pushGlobalMods();
@@ -101,7 +103,7 @@ class MainMenuState extends MusicBeatState
 
 		var scrollbg:FlxSprite = new FlxBackdrop('', X);
 		scrollbg.loadGraphic(dasavefolder+'/images/art/checkerboard.png');
-		scrollbg.antialiasing = FlxG.save.data.ModCompleted;
+		scrollbg.antialiasing = FlxG.save.data.SettedFolder;
 		scrollbg.velocity.x = -50;
 		add(scrollbg);
 
@@ -115,14 +117,16 @@ class MainMenuState extends MusicBeatState
 
 		var ourple:FlxSprite = new FlxSprite().loadGraphic(dasavefolder+'/images/art/purple.png');
 		ourple.antialiasing = ClientPrefs.globalAntialiasing;
-		if(FlxG.save.data.ModCompleted)	add(ourple);
+		if(FlxG.save.data.SettedFolder)	add(ourple);
 
 		var blackCorner:FlxSprite = new FlxSprite().loadGraphic(dasavefolder+'/images/art/blackcorner.png');
 		blackCorner.antialiasing = ClientPrefs.globalAntialiasing;
 		add(blackCorner);
 
-		var menuLogo:FlxSprite = new FlxSprite().loadGraphic(dasavefolder+'/images/art/logo.png');
+		menuLogo = new FlxSprite().loadGraphic(dasavefolder+'/images/art/logo.png');
 		menuLogo.antialiasing = ClientPrefs.globalAntialiasing;
+		menuLogo.x = 200 - menuLogo.width/2;
+		menuLogo.y = 170 - menuLogo.height/2;
 		add(menuLogo);
 
 		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
@@ -149,8 +153,8 @@ class MainMenuState extends MusicBeatState
 			menuItem.y += (i * 85);
 			menuItem.x -= 600 - (i * 140);
 			menuItem.frames = FlxAtlasFrames.fromSparrow(dasavefolder+'/images/menu.png', Assets.getText(dasavefolder+'/images/menu.xml'));
-			menuItem.animation.addByPrefix('idle', optionShit[i] + '0', FlxG.save.data.ModCompleted ? 6 : 24);
-			menuItem.animation.addByPrefix('selected', optionShit[i] + "select0", FlxG.save.data.ModCompleted ? 12 : 24, FlxG.save.data.ModCompleted);
+			menuItem.animation.addByPrefix('idle', optionShit[i] + '0', FlxG.save.data.SettedFolder ? 6 : 24);
+			menuItem.animation.addByPrefix('selected', optionShit[i] + "select0", FlxG.save.data.SettedFolder ? 12 : 24, FlxG.save.data.SettedFolder);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
 			menuItems.add(menuItem);
@@ -228,14 +232,32 @@ class MainMenuState extends MusicBeatState
 				MusicBeatState.switchState(new TitleState());
 			}
 
-			/*if (FlxG.keys.justPressed.SPACE){
-				FlxG.sound.play(Paths.sound('cancelMenu'));
-				FlxG.save.data.ModCompleted = !FlxG.save.data.ModCompleted;
-			}*/
+			
+			if (menuLogo.pixelsOverlapPoint(FlxG.mouse.getPositionInCameraView())){
+				menuLogo.scale.set(1.05,1.05);
+				if (FlxG.mouse.justPressed){
+					FlxG.save.data.SettedFolder = !FlxG.save.data.SettedFolder;
+					selectedSomethin = true;
+					TitleState.initialized = false;
+					TitleState.closedState = false;
+					FlxG.sound.music.fadeOut(0.3);
+					if(FreeplayState.vocals != null)
+					{
+						FreeplayState.vocals.fadeOut(0.3);
+						FreeplayState.vocals = null;
+					}
+					FlxG.mouse.visible = false;
+					FlxG.camera.fade(FlxColor.BLACK, 0.5, false, FlxG.resetGame, false);
+
+				}
+			}else{
+				menuLogo.scale.set(1,1);
+			}
 
 			if (controls.ACCEPT)
 			{
-				if (optionShit[curSelected] == 'freeplay' && !FlxG.save.data.ModCompleted)
+				FlxG.mouse.visible = false;
+				if (optionShit[curSelected] == 'freeplay' && !FlxG.save.data.SettedFolder)
 				{
 					FlxG.sound.play(Paths.sound('confirmMenu'));
 				}
