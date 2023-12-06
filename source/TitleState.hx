@@ -217,7 +217,8 @@ class TitleState extends MusicBeatState
 	{
 		var dasavefolder:String = 'assets';
 
-		if(FlxG.save.data.SettedFolder == null) FlxG.save.data.SettedFolder = false; //dummy crash lololololol
+		if(FlxG.save.data.ModCompleted == null) FlxG.save.data.ModCompleted = false; //dummy crash lololololol
+		if(FlxG.save.data.SettedFolder == null && FlxG.save.data.ModCompleted) FlxG.save.data.SettedFolder = true;
 		if(FlxG.save.data.SettedFolder) dasavefolder = 'dumb';
 
 		if (!initialized)
